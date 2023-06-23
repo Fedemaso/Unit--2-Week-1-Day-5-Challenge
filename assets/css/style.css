@@ -27,12 +27,21 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  margin-left: 27%;
-  margin-right: 26%;
+  position: fixed;
+  background-color: #ffc017;
   height: 83px;
-  max-width: 1192px;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid black;
 }
+
+#navbar a {
+    margin-left: 27%;
+    z-index: 2;
+    }
+
+
+
 
 #header-list a {
   text-decoration: none;
@@ -48,9 +57,12 @@ a:visited {
 
 ul {
   display: flex;
-  list-style-type: none;
+    list-style-type: none;
   font-family: "Roboto", sans-serif;
-  align-items: center;
+  justify-content: center;
+  
+  margin-right: 20%;
+  
 }
 
 li button {
@@ -58,16 +70,21 @@ li button {
   color: white;
   padding: 10px 15px;
   border-radius: 30px;
-  font-size: 1em;
+  
 }
 
 #header-list li {
-  margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-right: 30px;
+  width: auto;
 }
 
 #section-2 {
   background-color: #ffc017;
-
+z-index: 1;
+padding-top: 100px;
   position: relative;
   overflow: hidden;
   display: block;
@@ -141,7 +158,7 @@ main{
    
     margin-left: 27%;
     width: auto;
-    height: 500px;
+    
     flex-wrap: wrap;
 
 }
@@ -155,7 +172,7 @@ main{
     min-width: 0;
     max-width: 1192px;
     width: 100%;
-    padding-top: 40px;
+    margin-top: 10px;
     padding-bottom: 16px;
 
 
@@ -165,7 +182,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 10px;
+    
     
     
 }
@@ -180,7 +197,7 @@ span {
 }
 
 #section-3 article {
-    width: auto;
+    width: 350px;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
@@ -199,6 +216,11 @@ span {
     
 }
 
+.cards {
+    display: flex;
+    align-items: center;
+}
+
 .avatar {
     display: flex;
     align-items: center;
@@ -215,23 +237,172 @@ scale: 0.7;
 
 .avatar p {
     font-weight: bold;
-    
+    font-size: 0.8em;
 }
 
 .paragraph-subtitle{
     margin-left: 8px;
     font-weight: bold;
-   line-height: 0.5;
-   margin-top: 5px;
+   
+   margin-top: 10px;
 }
 
 .subtitle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
     margin-top: 20px;
     margin-left: 8px;
     opacity: 0.6;
     font-size: 0.9em;
     
+}
+
+#grey-hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid gainsboro;
+}
+
+
+#columnarticles{
+    margin-top: 50px;
+    margin-left: 27%;
+    width: auto;
+
+    
+}
+
+#section-4 {
+    display: flex;
+    justify-content: start;
+    font-family: "Roboto", sans-serif;
+    
+    
+   
+}
+
+#sidenav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+#sideul ul{
+    width:500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+
+    
+}
+
+#sideul li {
+    font-size: 1.1em;
+    border: 1px solid gray;
+    margin:6px 6px 6px 0;
+    padding:7px 15px;
+    color:grey
+}
+
+#sidetitle{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+}
+
+#second-ul li{
+    font-size: 1.1em;
+    margin:6px 6px 6px 0;
+   
+    color:grey;
+    border: 0px;
+}
+
+#second-ul ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#side-hr{
+    margin: 40px;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid gainsboro;
+}
+
+
+
+#articles {
+    display: flex;
+        align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-right: 22%;
+}
+
+
+.avatar4section{
+    display: flex;
+   align-items: center;
+}
+
+.avatar4section img{
+    border-radius: 70px;
+    margin-right: 15px;
+    scale: 0.7;
+    
+    }
+
+.avatar4section p {
+    font-weight: bold;
+    font-size: 0.8em;
+    
+}
+
+.h2-4section {
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.p4section{
+    color: gray;
+    margin-top: 10px;
+    font-size: 0.9em;
+    max-width: 450px;
+    
+}
+
+.span4section {
+    background-color:gainsboro ;
+    color:gray;
+    padding:5px 8px;
+    border-radius: 20px;
+}
+
+.subtitle4section {
+    display: flex;
+    
+}
+
+.star{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.imgs4section img {
+    width:200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.bookmark{
+    position:absolute;
+    right: 0;
+    margin-right: 54%;
 }
